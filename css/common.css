@@ -80,6 +80,9 @@ h1, h2, h3 {
   .navbar a {
     margin: 5px 0;
   }
+  body {
+    padding-top: 120px;
+  }
 }
 
 .game-list {
