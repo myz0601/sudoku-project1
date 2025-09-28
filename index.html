@@ -1,28 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sudoku Mock - Home</title>
+  <title>Sudoku Game - Home</title>
   <link rel="stylesheet" href="css/common.css">
   <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="home">
   <div class="navbar">
-    <span class="logo">Sudoku Mock</span>
-    <a href="/sudoku-project1/" class="active">Home</a>
-    <a href="/sudoku-project1/selection/">Game Selection</a>
-    <a href="/sudoku-project1/rules/">Rules</a>
-    <a href="/sudoku-project1/high-score/">High Scores</a>
-    <div class="auth-links">
+    <span class="logo">Sudoku Game</span>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <div class="menu">
+      <a href="/sudoku-project1/" class="active">Home</a>
+      <a href="/sudoku-project1/selection/">Game Selection</a>
+      <a href="/sudoku-project1/rules/">Rules</a>
+      <a href="/sudoku-project1/high-score/">High Scores</a>
       <a href="/sudoku-project1/login/">Login</a>
       <a href="/sudoku-project1/register/">Register</a>
     </div>
   </div>
 
-  <div class="container">
-    <h1>Sudoku Mock</h1>
-    <p style="text-align:center;">Welcome to Sudoku Mock!</p>
+  <div class="hero">
+    <h1>Welcome to Sudoku Game!</h1>
+    <p style="text-align:center;">Enjoy solving and challenging your brain!</p>
+  
+    <div class="hero-buttons">
+      <a href="/sudoku-project1/easy-game/index.html" class="btn">Play Easy Game</a>
+      <a href="/sudoku-project1/hard-game/index.html" class="btn">Play Hard Game</a>
+    </div>
   </div>
 </body>
 </html>

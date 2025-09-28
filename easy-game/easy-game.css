@@ -1,0 +1,57 @@
+.easy-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 50px);
+  grid-template-rows: repeat(6, 50px);
+  margin: 20px auto;
+  width: fit-content;
+  background: white;
+}
+
+.easy-grid input {
+  width: 50px;
+  height: 50px;
+  text-align: center;      
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 0;
+  color: #d397b1;
+}
+
+.easy-grid input[disabled] {
+  color: #7d698e;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #7d698e;
+}
+
+.easy-grid input:focus {
+  border: 2px solid #7d698e;
+  background: #f8f6fb;
+}
+
+.easy-grid input:nth-child(6n+1),
+.easy-grid input:nth-child(6n+4) {
+  border-left: 3px solid #7d698e;
+}
+
+.easy-grid input:nth-child(6n) {
+  border-right: 3px solid #7d698e;
+}
+
+.easy-grid input:nth-child(-n+6),
+.easy-grid input:nth-child(n+13):nth-child(-n+18),
+.easy-grid input:nth-child(n+25):nth-child(-n+30) {
+  border-top: 3px solid #7d698e;
+}
+
+.easy-grid input:nth-child(n+31) {
+  border-bottom: 3px solid #7d698e;
+}
+

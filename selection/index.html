@@ -1,34 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Select Game</title>
+  <title>Sudoku Game - Game Selection</title>
   <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="selection.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="selection">
   <div class="navbar">
-    <span class="logo">Sudoku Mock</span>
-    <a href="/sudoku-project1/">Home</a>
-    <a href="/sudoku-project1/selection/" class="active">Game Selection</a>
-    <a href="/sudoku-project1/rules/">Rules</a>
-    <a href="/sudoku-project1/score/">High Scores</a>
-    <div class="auth-links">
+    <span class="logo">Sudoku Game</span>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+    <div class="menu">
+      <a href="/sudoku-project1/">Home</a>
+      <a href="/sudoku-project1/selection/" class="active">Game Selection</a>
+      <a href="/sudoku-project1/rules/">Rules</a>
+      <a href="/sudoku-project1/high-score/">High Scores</a>
       <a href="/sudoku-project1/login/">Login</a>
       <a href="/sudoku-project1/register/">Register</a>
-
     </div>
   </div>
 
   <div class="container">
-    <h1>Select a Game</h1>
-    <ul class="game-list">
-      <li><a href="/sudoku-project1/hard-game/">Classic Sudoku</a> — Author: Alice</li>
-      <li><a href="/sudoku-project1/hard-game/">Samurai Sudoku</a> — Author: Bob</li>
-      <li><a href="/sudoku-project1/hard-game/">Mystery Sudoku</a> — Author: Charlie</li>
-      <li><a href="/sudoku-project1/hard-game/">Logic Master Sudoku</a> — Author: Dana</li>
-      <li><a href="/sudoku-project1/hard-game/">Brainstorm Sudoku</a> — Author: Evan</li>
-    </ul>
-  </div>
+  <h1>Select a Game</h1>
+  <ul class="game-list">
+    <li>
+      <a href="/sudoku-project1/hard-game/">Classic Sudoku</a>
+      <span class="author">Author: Lily</span>
+    </li>
+    <li>
+      <a href="/sudoku-project1/hard-game/">Freestyle Sudoku</a>
+      <span class="author">Author: John</span>
+    </li>
+    <li>
+      <a href="/sudoku-project1/hard-game/">Modern Sudoku</a>
+      <span class="author">Author: Alice</span>
+    </li>
+    <li>
+      <a href="/sudoku-project1/hard-game/">Interest Sudoku</a>
+      <span class="author">Author: Aiden</span>
+    </li>
+    <li>
+      <a href="/sudoku-project1/hard-game/">Fun Sudoku</a>
+      <span class="author">Author: David</span>
+    </li>
+    <li>
+      <a href="/sudoku-project1/hard-game/">Galaxy Sudoku</a>
+      <span class="author">Author: Sophia</span>
+    </li>
+    <li>
+      <a href="/sudoku-project1/hard-game/">Rainbow Sudoku</a>
+      <span class="author">Author: Ethan</span>
+    </li>
+    <li>
+      <a href="/sudoku-project1/hard-game/">Mystery Sudoku</a>
+      <span class="author">Author: Chloe</span>
+    </li>
+    <li>
+      <a href="/sudoku-project1/hard-game/">Samurai Sudoku</a>
+      <span class="author">Author: Daniel</span>
+    </li>
+  </ul>
+</div>
 </body>
 </html>
